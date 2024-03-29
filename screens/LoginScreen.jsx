@@ -45,6 +45,7 @@ const LoginScreen = () => {
           <TouchableOpacity className="w-full px-4 py-2 rounded-xl bg-green-500 my-3 flex items-center justify-center">
             <Text className="py-2 text-white text-xl font-semibold">Logar</Text>
           </TouchableOpacity>
+            
         </View>
       </View>
     </View>

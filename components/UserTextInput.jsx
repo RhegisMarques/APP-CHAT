@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import React, { UseLayoutEffect, useState } from "react";
+import React, { handleTextChanged, useLayoutEffect, useState } from "react";
 import { Entypo, MaterialIcons } from "@expo/vector-icons";
 
 const UserTextInput = ({placeholder, isPass, setStateValue}) => {
@@ -32,7 +32,7 @@ const UserTextInput = ({placeholder, isPass, setStateValue}) => {
         className ="flex-1 text-base text-gray-200 font-semibold -mt-1"
         placeholder={placeholder}
         value={value}
-        onChangeText={handleTextchanged}
+        onChangeText={handleTextChanged}
         secureTextEntry={isPass && showPass}
         autoCapitalize="none"
       />
