@@ -3,12 +3,16 @@ import React, { useState } from "react";
 
 import { BgImage, Logo } from "../assets";
 import { UserTextInput } from "../components";
+import { useNavigation } from "@react-navigation/native";
 
 const LoginScreen = () => {
   const screenWidth = Math.round(Dimensions.get("window").width);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigation = useNavigation();
+
   return (
     <View className="flex-1 items-center justify-start">
       <Image
@@ -48,10 +52,13 @@ const LoginScreen = () => {
 
           <View className="w-full py-12 flex-row items-center justify-center space-x-2">
             <Text className="text-base text-black">Não tem uma conta?</Text>
-            <TouchableOpacity>
-              <Text className="text-base font-semibold text-greenBold"> a
-              Cadastre-se
-            </Text>
+            <TouchableOpacity
+              onPress={() => navigation.navegate("SingUpScreen")}
+            >
+              <Text className="text-base font-semibold text-greenBold">
+                {" "}
+                a Cadastre-se
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
