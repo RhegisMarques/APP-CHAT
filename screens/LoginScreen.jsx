@@ -45,7 +45,15 @@ const LoginScreen = () => {
           <TouchableOpacity className="w-full px-4 py-2 rounded-xl bg-green-500 my-3 flex items-center justify-center">
             <Text className="py-2 text-white text-xl font-semibold">Logar</Text>
           </TouchableOpacity>
-            
+
+          <View className="w-full py-12 flex-row items-center justify-center space-x-2">
+            <Text className="text-base text-black">Não tem uma conta?</Text>
+            <TouchableOpacity>
+              <Text className="text-base font-semibold text-greenBold"> a
+              Cadastre-se
+            </Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </View>
