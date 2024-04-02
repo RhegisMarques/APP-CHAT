@@ -8,7 +8,7 @@ const UserTextInput = ({placeholder, isPass, setStateValue}) => {
   const [showPass, setShowPass] = useState(true);
   const [icon, setIcon] = useState(null);
 
-  const handleTextChanged = (text) => {
+  handleTextChanged = (text) => {
     setValue(text);
     setStateValue(value);
   };
