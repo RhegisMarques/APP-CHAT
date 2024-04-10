@@ -29,7 +29,7 @@ const LoginScreen = () => {
         <Text className="text-xl font-bold text-gray-800">AppChat!</Text>
 
         <View className="w-full flex items-center justify-center">
-          {/* Alerta  */}
+          
 
           {/* Email */}
           <UserTextInput
@@ -53,11 +53,10 @@ const LoginScreen = () => {
           <View className="w-full py-12 flex-row items-center justify-center space-x-2">
             <Text className="text-base text-black">Não tem uma conta?</Text>
             <TouchableOpacity
-              onPress={() => navigation.navegate("SingUpScreen")}
+              onPress={() => navigation.navigate("SingUpScreen")}
             >
               <Text className="text-base font-semibold text-greenBold">
-                {" "}
-                a Cadastre-se
+                Cadastre-se
               </Text>
             </TouchableOpacity>
           </View>
